@@ -32,6 +32,55 @@
 //}
 //for (int i = 0; i < arr.Length; i++)
 //    if (i < arr.Length - 1)
-//    Console.Write($"{arr[i]},");
-//else
-//    Console.Write(arr[i]);
+//        Console.Write($"{arr[i]},");
+//    else
+//        Console.Write(arr[i]);
+
+
+
+
+
+
+//task3
+//string input = Console.ReadLine();
+//string[] inputs = input.Split(',');
+//int[] mass = new int[inputs.Length];
+//for (int i = 0; i < inputs.Length; i++)
+//{
+//    mass[i] = int.Parse(inputs[i].Trim());
+//}
+//int[] longestS = new int[0];
+//int[] currentS = new int[inputs.Length];
+//int maxL = 0;
+//int currentL = 0;
+//for (int a=0; a < mass.Length;a++)
+//{
+//    for ( int i = 0; i < mass.Length-1; i++)
+//    {
+//        int k = a;
+//        currentL = 1;
+//        currentS[0] = mass[a];
+//        for (int j = i + 1; j < mass.Length; j++)
+//        {
+//            if (mass[j] > mass[k])
+//            {
+//                k = j;
+//                currentS[currentL] = mass[j];
+//                currentL++;
+//            }
+//        }
+//        if (currentL >= maxL)
+//        {
+//            maxL = currentL;
+//            longestS = new int[currentL];
+//            Array.Copy(currentS, longestS, currentL);
+//        }
+//    }
+//}
+//for (int i = 0; i < longestS.Length; i++)
+//{
+//    if (i < longestS.Length - 1)
+//        Console.Write($"{longestS[i]},");
+//    else
+//    Console.Write(longestS[i]);
+//}
